@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kick & Dunk</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+        <script src="js/jquery-3.7.1.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="navigator-container" id="navigator-container">
+                <img src="images/logo-black.png" alt="logo" id="logo-img">
+                <div class="nav-bar-container">
+
+                    <div class="navigator-lists">
+                        <ul id="nav-bar">
+                            <li id="home-icon"><a class="active" href="#home">Home</a></li>
+                            <li><a href="#shopping">Shopping</a></li>
+                            <li id="about-icon"><a href="#about-us">About Us</a></li>
+                            <li id="contact-icon"><a href="#contact">Contact</a></li>
+                            <li id="help-icon"><a href="#help">Help</a></li>
+                            <li id="staff-icon"><a href="#staff">Staff</a></li>
+                            <li id="account-icon"><a href="#account"><i class="fa-solid fa-user"></i></a></li>
+                            <li id="profile-icon"><i class="fa-solid fa-address-card"></i></li>
+                            <li id="trigger-search"><i class="fa-solid fa-magnifying-glass"></i></li>
+                            <li id="cart-icon"><a href="#cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                                <p id="ordered-items">0</p></li>
+                            <li id="logout-icon"><i class="fa-solid fa-right-from-bracket"></i></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+
+
+        <section class="page" id="home">
+            <img src="images/ucl.png" alt="ucl">
+            <h3>UCL 23/24 PRO STARTED</h3>
+            <button id="shop-now">SHOP NOW</button>
+        </section>
+
+        <section id="profile">
+            <div class="content-box">
+                <i class="fa-solid fa-circle-xmark"></i>
+                <i class="fa-solid fa-pen"></i>
+                <i class="fa-solid fa-circle-check"></i>
+
+                <div class="information-box">
+                    <h2>User Name: <span>Unregisted</span></h2>
+                    <h3>Password: <span>Unregisted</span></h3>
+                    <h4>Gmail: <span>Unregisted</span></h4>
+                    <h5>Address: <span>Unregisted</span></h5>
+                    <h6>Phone: <span>Unregisted</span></h6>
+                </div>
+
+                <div class="change-form">
+                    <form id="user-form">
+                        <span>Update Details</span>
+                        <div class="inputs">
+                            <input name="userName" type="text" placeholder="User Name">
+                            <input name="userPassword" type="text" placeholder="Password">
+                            <input name="gmail" type="text" placeholder="Gmail">
+                            <input name="address" type="text" placeholder="Address">
+                            <input name="phone" type="text" placeholder="Phone">
+                        </div>
+                        <button type="submit" id="user-change">Update</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-us" class="toggle-section page">
+            <div class="about-container">
+                <h2>About Kick & Dunk Co.</h2>
+                <p>Welcome to Kick & Dunk Co., the premier online retailer for unique football and basketball jerseys. Delve deep into our story, get acquainted with our team, and journey with us through our legacy.</p>
+
+                <div class="about-details">
+
+                    <div class="about-card">
+                        <h3>Our Vision</h3>
+                        <p>At Kick & Dunk Co., we strive to connect fans to their cherished teams and players by offering an unparalleled range of authentic jerseys.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <h3>Our Odyssey</h3>
+                        <p>Our humble beginnings trace back to a quaint store in London in 2010. We then took our passion online, garnering a global fandom.</p>
+                    </div>
+
+                    <div class="about-card">
+                        <h3>Meet the Squad</h3>
+                        <p>Get to know the vibrant souls powering Kick & Dunk Co. Our committed team ensures that your shopping experience is nothing short of spectacular.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="toggle-section page">
+            <div class="contact-container">
+                <h2>Contact Kick & Dunk Co.</h2>
+                <p>If you have any questions, comments, or concerns, please don't hesitate to reach out. We'd love to hear from you.</p>
+
+                <div class="contact-details">
+
+                    <div class="contact-card">
+                        <h3>Email</h3>
+                        <p><a href="mailto:info@kickndunkco.com">info@kickndunkco.com</a></p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>Phone</h3>
+                        <p>+61-123-456-7890</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <h3>Address</h3>
+                        <p>
+                            Kick & Dunk Co. <br>
+                            123 Sports Lane, <br>
+                            Perth, WA 12345
+                        </p>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+
+                </div>
+		  <h3>Send Us a Message</h3>
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+
+
+        <section id="help" class="toggle-section page">
+            <div class="help-container">
+                <h2>How to Use Kick & Dunk Co.</h2>
+
+                <div class="help-topic">
+
+                    <ul>
+                        <li><strong>Home:</strong> This is where you can discover our latest products and deals. Look for the 'Home' option in the navigation bar to return to the starting page at any time.</li>
+                        <li><strong>Shopping:</strong> If you're looking to purchase jerseys, find the 'Shopping' section in the navigation bar. This is where our catalog of products is available for you to browse through.</li>
+                        <li><strong>About Us:</strong> Curious about who we are? The 'About Us' section tells you the story of Kick & Dunk Co., our values, and our journey.</li>
+                        <li><strong>Contact:</strong> Should you have any questions or need support, the 'Contact' section is where you can find ways to reach out to us.</li>
+                        <li><strong>Help:</strong> For guidance on how to use the site, the 'Help' section, which is what you're reading now, will provide all the necessary information.</li>
+                        <li><strong>Account:</strong> By accessing your personal account, you can manage your orders, set your preferences, and update your personal details.</li>
+                        <li><strong>Search:</strong> If you are looking for something specific, use the search functionality by clicking on the search icon or pressing 'S' on your keyboard.</li>
+                        <li><strong>Cart:</strong> The items you have added to your shopping cart can be reviewed anytime by navigating to the 'Cart' section.</li>
+                    </ul>
+                </div>
+
+                <div class="help-topic">
+                    <h3>Creating an Account</h3>
+                    <p>To enhance your shopping experience, consider signing up for an account. This allows you to make purchases, track your orders, and receive updates. You can sign up or log in by selecting the user icon typically located at the top right of the page.</p>
+                </div>
+
+                <div class="help-topic">
+                    <h3>Making a Purchase</h3>
+                    <p>Ready to buy? Simply browse our selections in the 'Shopping' section. Once you've found your desired jersey, select the product to view the details. Choose your size and then add the item to your cart. When you're ready to complete your purchase, proceed to review your cart and then check out to finalize your order.</p>
+                </div>
+
+            <div class="help-topic">
+                    <h3>Product Information</h3>
+                <p>For every product listed in our 'Shopping' section, you will find detailed information including price, available sizes, materials, and care instructions. Simply click on the product image or name to access this information and make an informed purchase.</p>
+                </div>
+
+            <div class="help-topic">
+                <h3>Managing Your Account</h3>
+                <p>Your account dashboard is the place to manage all aspects of your relationship with us. Here you can update your personal information, change your password, review past orders, and manage your subscription preferences.</p>
+                </div>
+
+            <div class="help-topic">
+                <h3>Tracking Your Order</h3>
+                <p>Once you have made a purchase, you can track the progress of your order from processing to shipment. Details regarding tracking will be provided via email after your purchase, and you can also access this information in the 'Account' section under 'Order History'.</p>
+                </div>
+
+            <div class="help-topic">
+                <h3>Technical Issues</h3>
+                <p>If you encounter any technical issues while using our website, please reach out to us immediately through the 'Contact' section. Provide a detailed description of the problem so our technical team can address it promptly.</p>
+                </div>
+
+            <div class="help-topic">
+                <h3>Feedback and Suggestions</h3>
+                <p>We welcome your feedback and suggestions on how we can improve your experience. Please use the feedback form available in the 'Contact' section to share your thoughts with us.</p>
+                </div>
+
+            <div class="help-topic">
+                <h3>Privacy and Security</h3>
+                <p>Your privacy and the security of your personal information are paramount to us. Please visit our Privacy Policy section to understand how we protect and use your data.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="page" id="shopping">
+            <h2 class="hidden-h1">This will be hidden</h2>
+            <section id="promotion">
+                <h3 id="promo-header">LOGIN AND ENJOY FURTHER FUNCTIONALITIES!<span class="unregisted">Unregisted</span></h3>
+                <button id="login-now">LOGIN NOW</button>
+            </section>
+
+            <section id="search-section">
+                <h2 class="hidden-h1">This will be hidden</h2>
+                <div class="search-section-cotainer">
+                    <div class="search-bar">
+                        <div class="search-container">
+                            <input type="text" id="search-input" name="search-input" placeholder="Search by product's name">
+                            <i class="fa-solid fa-magnifying-glass" id="search"></i>
+                        </div>
+
+                    </div>
+
+
+                    <div class="found-products" id="found-products">
+                    </div>
+                </div>
+            </section>
+
+            <section id="search-buttons">
+                <h2>Filters</h2>
+
+                <div class="main-button">
+
+                    <input type="radio" id="all-button" name="main-buttons[]" value="all">
+                    <label for="all-button" class="button-active">All Products</label>
+
+                    <input type="radio" id="football-button" name="main-buttons[]" value="football">
+                    <label for="football-button" >Football</label>
+
+                    <input type="radio" id="basketball-button" name="main-buttons[]" value="basketball">
+                    <label for="basketball-button">Basketball</label>
+
+                    <input type="radio" id="color-button" name="main-buttons[]" value="colour">
+                    <label for="color-button">Colour</label>
+                </div>
+
+                <div class="football-button">
+                    <input type="radio" id="mu-button" name="football-buttons[]">
+                    <label for="mu-button">Manchester United</label>
+
+                    <input type="radio" id="real-button" name="football-buttons[]">
+                    <label for="real-button">Real Madrid</label>
+
+                    <input type="radio" id="juv-button" name="football-buttons[]">
+                    <label for="juv-button">Juventus</label>
+
+                    <input type="radio" id="barca-button" name="football-buttons[]">
+                    <label for="barca-button">F.C. Barcelona</label>
+
+                    <input type="radio" id="chel-button" name="football-buttons[]">
+                    <label for="chel-button">Chelsea F.C.</label>
+
+                    <input type="radio" id="psg-button" name="football-buttons[]">
+                    <label for="psg-button">Paris Saint-Germain</label>
+                </div>
+
+                <div class="basketball-button">
+                    <input type="radio" id="bostons-button" name="basketball-buttons[]">
+                    <label for="bostons-button">Boston Celtics</label>
+
+                    <input type="radio" id="brooklyn-button" name="basketball-buttons[]">
+                    <label for="brooklyn-button">Brooklyn Nets</label>
+
+                    <input type="radio" id="bucks-button" name="basketball-buttons[]">
+                    <label for="bucks-button">Bucks</label>
+
+                    <input type="radio" id="bulls-button" name="basketball-buttons[]">
+                    <label for="bulls-button">Chicago Bulls</label>
+
+                    <input type="radio" id="goldenstate-button" name="basketball-buttons[]">
+                    <label for="goldenstate-button">Golden State Warriors</label>
+
+                    <input type="radio" id="miami-button" name="basketball-buttons[]">
+                    <label for="miami-button">Miami Heat</label>
+
+                    <input type="radio" id="raptors-button" name="basketball-buttons[]">
+                    <label for="raptors-button">Toronto Raptors</label>
+
+                    <input type="radio" id="suns-button" name="basketball-buttons[]">
+                    <label for="suns-button">Phoenix Suns</label>
+
+                    <input type="radio" id="clipper-button" name="basketball-buttons[]">
+                    <label for="clipper-button">Los Angeles Clippers</label>
+
+                    <input type="radio" id="lakers-button" name="basketball-buttons[]">
+                    <label for="lakers-button">Los Angeles Lakers</label>
+
+                </div>
+
+                <div class="colour-button">
+                    <input type="radio" id="white-button" name="colour-buttons[]" checked>
+                    <label class="colour-active" for="white-button" id="White"></label>
+
+                    <input type="radio" id="black-button" name="colour-buttons[]">
+                    <label for="black-button" id="Black"></label>
+
+                    <input type="radio" id="red-button" name="colour-buttons[]">
+                    <label for="red-button" id="Red"></label>
+
+                    <input type="radio" id="obsidian-button" name="colour-buttons[]">
+                    <label for="obsidian-button" id="Obsidian"></label>
+
+                    <input type="radio" id="club-gold-button" name="colour-buttons[]">
+                    <label for="club-gold-button" id="Club-Gold"></label>
+
+                    <input type="radio" id="sesame-button" name="colour-buttons[]">
+                    <label for="sesame-button" id="Sesame"></label>
+
+                    <input type="radio" id="rush-blue-button" name="colour-buttons[]">
+                    <label for="rush-blue-button" id="Rush-Blue"></label>
+
+                    <input type="radio" id="light-purple-button" name="colour-buttons[]">
+                    <label for="light-purple-button" id="Light-Purple"></label>
+                </div>
+
+            </section>
+
+            <section id="all-product">
+                <h2 id="header">All Products</h2>
+                <div class="products-container">
+                </div>
+            </section>
+
+            <section id="sign-up-banner">
+                <h4>JOIN US & GET A SPECIAL WELCOME GIFT</h4>
+                <button>SIGN UP FOR FREE</button>
+            </section>
+
+            <section id="details">
+                <div class="products-info">
+                    <h2>PRODUCTS</h2>
+                    <a href="#"><p>All Products</p></a>
+                    <a href="#"><p>Adidas</p></a>
+                    <a href="#"><p>Nike</p></a>
+                </div>
+
+                <div class="products-info">
+                    <h2>COMPANY INFO</h2>
+                    <a href="#"><p>About Us</p></a>
+                    <a href="#"><p>Contact</p></a>
+                </div>
+
+                <div class="products-info">
+                    <h2>SUPPORT</h2>
+                    <a href="#"><p>Account</p></a>
+                    <a href="#"><p>Help</p></a>
+                </div>
+
+                <div class="products-info">
+                    <h2>FOLLOW US</h2>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </section>
+        </section>
+
+
+        <section class="page" id="account">
+            <div class="accounts-container" id="account-container">
+
+                <div class="account-container signin-container">
+                    <form id="login-form">
+                        <h1 id="form-header">Sign In</h1>
+                        <div class="links">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-google-plus-g"></i>
+                            <i class="fa-brands fa-discord"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <span>or use your account to sign in</span>
+                        <input name="username" type="text" placeholder="User Name" required>
+                        <input name="password" type="password" placeholder="Password" required>
+                        <button type="submit" id="login-button">Sign In</button>
+                    </form>
+                </div>
+
+                <div class="account-container signup-container">
+                    <form id="signup-form">
+                        <h1 id="signup-header">Sign Up</h1>
+                        <div class="links">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-google-plus-g"></i>
+                            <i class="fa-brands fa-discord"></i>
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                        <span>or use your email for registration</span>
+                        <input name="userName" type="text" placeholder="User Name" required>
+                        <select id="userType">
+                            <option value="user">User</option>
+                            <option value="staff">Staff</option>
+                        </select>
+                        <input name="userPassword" type="password" placeholder="Password" required>
+                        <button type="submit" id="signup-button">Sign Up</button>
+                    </form>
+                </div>
+
+                <div class="greeting-container">
+                    <div class="greeting">
+                        <div class="greeting-panel greeting-signup">
+                            <h1>Welcome Back!</h1>
+                            <span>Sign in to access your account</span>
+                            <button class="direct" id="signin">Sign In</button>
+                        </div>
+
+                        <div class="greeting-panel greeting-signin">
+                            <h1>Hello there, join us today!</h1>
+                            <span>Sign up now to become a new member</span>
+                            <button type="submit" class="direct" id="signup">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page" id="cart">
+            <div class="cart-container">
+                <div class="order-items">
+                    <div class="order-title">
+                        <h1>YOUR CART</h1>
+                        <p><span><i class="fa-solid fa-truck-fast"></i>FREE DELIVERY:</span> For only when you spend more than $500</p>
+                        <p><span><i class="fa-sharp fa-solid fa-hand-holding-dollar"></i>FREE RETURN:</span> 30 days from the date of purchase</p>
+                        <h3>Items in your bag are not reserved - check out right away to claim them as yours!</h3>
+                    </div>
+
+                    <div class="order-products">
+                    </div>
+                </div>
+
+                <div class="order-summary">
+                    <p id="notification"></p>
+                    <div class="checkout-button">
+                        <button>CHECKOUT</button>
+                        <i class="fa-solid fa-credit-card"></i>
+                    </div>
+
+                    <h1>ORDER SUMMARY <i class="fa-solid fa-bag-shopping"></i></h1>
+
+                    <div class="summary">
+                        <div class="summary-title">
+                            <h4 id="number-of-items">0 item</h4>
+                            <h4>Delivery</h4>
+                            <h3>Total</h3>
+                        </div>
+
+                        <div class="summary-info">
+                            <h4>$<span id="items-price">0.00</span></h4>
+                            <h4>$<span id="delivery-price">0.00</span></h4>
+                            <h3>$<span id="total-price">0.00</span></h3>
+                        </div>
+                    </div>
+
+                    <div class="accepted-card">
+                        <h2>ACCEPTED PAYMENT METHODS</h2>
+                        <div class="card-imgs">
+                            <img src="images/cards/visa.png" alt="visa">
+                            <img src="images/cards/amex.png" alt="amex">
+                            <img src="images/cards/mastercard.png" alt="mastercard">
+                            <img src="images/cards/paypal.png" alt="paypal">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="overlay"></div>
+        <section id="product-information">
+            <div class="product-container">
+                <div class="images-container">
+                    <div class="header-image">
+                        <img id="header-image" src="a" alt="header">
+                    </div>
+
+                    <div class="sub-images">
+                        <img src="a" alt="image1">
+                        <img src="a" alt="image2">
+                        <img src="a" alt="image3">
+                        <img src="a" alt="image4">
+                    </div>
+                </div>
+
+                <div class="product-description">
+                    <p>a</p>
+                    <h2 class="1">M</h2>
+                    <h6>White</h6>
+                    <div class="description">
+                        <h3>Description</h3>
+                        <p>A</p>
+                    </div>
+
+                    <h4>$</h4>
+
+                    <h5>Sizes</h5>
+                    <div class="size-button">
+                        <input type="radio" id="small" name="size[]" value="S">
+                        <label for="small" class="size-active">S</label>
+
+                        <input type="radio" id="medium" name="size[]" value="M">
+                        <label for="medium">M</label>
+
+                        <input type="radio" id="large" name="size[]" value="L">
+                        <label for="large">L</label>
+
+                        <input type="radio" id="xl" name="size[]" value="XL">
+                        <label for="xl">XL</label>
+
+                        <input type="radio" id="xxl" name="size[]" value="XXL">
+                        <label for="xxl">XXL</label>
+                    </div>
+
+                    <button id="add-to-cart">Add To Cart</button>
+                    <div class="white-box">
+                    </div>
+                </div>
+
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+        </section>
+
+        <section class="page" id="staff">
+            <h1>WELCOME BACK, <span>STAFF</span>!</h1>
+            <div class="products-table">
+            </div>
+
+            <form id="change-product">
+                <span>Change</span>
+                <div class="first">
+                    <input name="productID" type="text" placeholder="Product ID" required>
+                    <input name="productTitle" type="text" placeholder="Product Title" required>
+                    <input name="desTitle" type="text" placeholder="des Title" required>
+                    <input name="desPara" type="text" placeholder="des Para" required>
+                    <input name="productPrice" type="text" placeholder="Product Price" required>
+                    <input name="images" type="text" placeholder="images" required>
+                </div>
+
+                <div class="second">
+                    <input name="brand" type="text" placeholder="Brand" required>
+                    <select>
+                        <option value="football">Football</option>
+                        <option value="basketball">Basketball</option>
+                    </select>
+                    <input name="colour" type="text" placeholder="Colour" required>
+                    <input name="team" type="text" placeholder="Team" required>
+                    <input name="stock" type="number" placeholder="Stock" required>
+                </div>
+                <button type="submit" id="change-button">Change</button>
+            </form>
+
+            <form id="add-product">
+                <span>Add</span>
+                <div class="first">
+                    <input name="productTitle" type="text" placeholder="Product Title" required>
+                    <input name="desTitle" type="text" placeholder="des Title" required>
+                    <input name="desPara" type="text" placeholder="des Para" required>
+                    <input name="productPrice" type="text" placeholder="Product Price" required>
+                    <input name="images" type="text" placeholder="images" required>
+                </div>
+
+                <div class="second">
+                    <input name="brand" type="text" placeholder="Brand" required>
+                    <select>
+                        <option value="football">Football</option>
+                        <option value="basketball">Basketball</option>
+                    </select>
+                    <input name="colour" type="text" placeholder="Colour" required>
+                    <input name="team" type="text" placeholder="Team" required>
+                    <input name="stock" type="number" placeholder="Stock" required>
+                </div>
+                <button type="submit" id="more-button">Add</button>
+            </form>
+
+
+            <div class="accounts-table">
+            </div>
+            <form id="change-account">
+                <span>Change Account</span>
+                <div class="first">
+                    <input name="userID" type="text" placeholder="userID" required>
+                    <input name="userName" type="text" placeholder="User Name" required>
+                    <input name="userPassword" type="text" placeholder="Password" required>
+                </div>
+                <div class="second">
+                    <input name="gmail" type="text" placeholder="Gmail" required>
+                    <input name="address" type="text" placeholder="Address" required>
+                    <input name="phone" type="text" placeholder="Phone" required>
+                </div>
+
+                <button type="submit" id="change">Change</button>
+            </form>
+
+            <form id="add-account">
+                    <span>Create Account</span>
+                    <input name="userName" type="text" placeholder="User Name" required>
+                    <select>
+                        <option value="user">User</option>
+                        <option value="staff">Staff</option>
+                    </select>
+                    <input name="userPassword" type="password" placeholder="Password" required>
+                    <button type="submit" id="add-button">Create</button>
+            </form>
+
+            <div class="orders-table">
+            </div>
+        </section>
+
+
+        <footer>
+            <div class="logo-container">
+                <img src="images/logo.png" alt="logo">
+            </div>
+
+            <div class="copy-right">
+                <div class="condition">
+                    <a href="#"><p id="privacy">Privacy Policy</p></a>
+                    <p>&verbar;</p>
+                    <a href="#"><p id="term">Term &amp; Conditions</p></a>
+                </div>
+
+                <div class="acknowledges">
+                    <p>Copyright &copy;2023 KICK &amp; DUNK  &verbar; All Rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/Server/show-products.js"></script>
+        <script src="js/index.js"></script>
+        <script src="js/Server/login-handler.js"></script>
+        <script src="js/Server/signup-handler.js"></script>
+        <script src="js/logout-handler.js"></script>
+        <script src="js/add-to-cart-handler.js"></script>
+        <script src="js/Server/checkout-handler.js"></script>
+        <script src="js/Server/information-handler.js"></script>
+        <script src="js/Server/staff-handler/staff-handler.js"></script>
+        <script src="js/Server/add-change-products.js"></script>
+        <script src="js/Server/change-account.js"></script>
+        <script src="js/Server/update-account.js"></script>
+        <script src="js/Server/search.js"></script>
+    </body>
+</html>
